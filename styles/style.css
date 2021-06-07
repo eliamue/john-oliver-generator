@@ -13,6 +13,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    width: 100%;
 }
 
 main {
@@ -24,6 +25,7 @@ main {
 }
 
 section {
+    display: flex;
     background-color: var(--color5);
     width: 1000px;
     max-width: 80%;
@@ -32,12 +34,13 @@ section {
     justify-content: center;
     align-items: center;
     padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
+    padding-bottom: 20px;
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
     border-radius: 30px;
     box-shadow: 5px 5px 10px rgb(36, 36, 55);
+    overflow: visible;
 }
 
 header {
@@ -56,11 +59,11 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+    bottom: 0;
 }
 
-
 h2 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -69,15 +72,20 @@ h2 {
 }
 
 p {
-    margin: var(--gutter);
-    font-size: 40px;
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    font-size: 2rem;
     justify-content: center;
     text-align: center;
     border-radius: 30px;
     text-shadow: 5px 5px 10px rgb(77, 77, 82);
+    padding: 5px;
+    overflow: visible;
 }
 
 footer {
+    display: flex;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -86,7 +94,8 @@ footer {
     justify-content: space-around;
     background-color: var(--color2);
     box-shadow: var(--shadow);
-    height: 100px;
+    height: 20%;
+    margin-top: 20px;
 }
 
 button {
