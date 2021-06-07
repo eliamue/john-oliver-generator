@@ -66,14 +66,6 @@ h2 {
     margin-right: 20px;
 }
 
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
-}
-
 p {
     margin: var(--gutter);
     font-size: 40px;
