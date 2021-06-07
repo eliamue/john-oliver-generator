@@ -1,17 +1,10 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+--color1: rgb(129, 127, 138);
+--color2: rgb(18, 17, 17);
+--color3: rgb(139, 135, 162);
+--color5: rgb(111, 102, 133);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -43,14 +36,17 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgb(36, 36, 55);
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    padding: 10px;
 }
 
 footer {
@@ -80,8 +76,13 @@ header img {
 
 p {
     margin: var(--gutter);
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    text-shadow: 5px 5px 10px rgb(77, 77, 82);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -89,25 +90,11 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color2);
     box-shadow: var(--shadow);
+    height: 100px;
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-
-  }
+/* .johnoliver {
+    height: 300px;
+} */
